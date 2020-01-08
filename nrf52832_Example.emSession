@@ -1,0 +1,48 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints"/>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1/>
+ <Memory2/>
+ <Memory3/>
+ <Memory4/>
+ <Project>
+  <ProjectSessionItem path="nrf52832_Example"/>
+  <ProjectSessionItem path="nrf52832_Example;nrf52832_Example"/>
+  <ProjectSessionItem path="nrf52832_Example;nrf52832_Example;CMSIS Files"/>
+  <ProjectSessionItem path="nrf52832_Example;nrf52832_Example;RTT Files"/>
+  <ProjectSessionItem path="nrf52832_Example;nrf52832_Example;Script Files"/>
+  <ProjectSessionItem path="nrf52832_Example;nrf52832_Example;Source Files"/>
+  <ProjectSessionItem path="nrf52832_Example;nrf52832_Example;System Files"/>
+ </Project>
+ <Register1/>
+ <Register2/>
+ <Register3/>
+ <Register4/>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never"/>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="22" useTextEdit="1" useBinaryEdit="0" left="0" path="nrf52832_Example.mak" selected="0" top="0" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="nrf52832_Example" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
+</session>
