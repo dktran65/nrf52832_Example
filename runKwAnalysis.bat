@@ -6,6 +6,8 @@
 @set KW_VERSION=Kw19v2
 
 @set KW_TOOL_LOC=C:\Klocwork\kwbuildtools\bin
+:: Start Date/TIME
+@echo Start SCA at %DATE% and %TIME%
 :: Run Cleanup and Klocwork Analysis
 ::
 %KW_TOOL_LOC%\kwinject cmd /c build.bat
@@ -16,3 +18,4 @@ kwbuildproject --url http://%KW_SVRNAME%:%KW_SVRPORT%/%KW_PROJECT% -f -o kwtable
 ::
 kwadmin --url http://%KW_SVRNAME%:%KW_SVRPORT% load %KW_PROJECT% kwtables --name %DATE:~10,4%%DATE:~4,2%%DATE:~7,2%_%TIME:~0,2%%TIME:~3,2%%TIME:~6,2%_%KW_VERSION%
 ::
+@echo End SCA at %DATE% and %TIME%
