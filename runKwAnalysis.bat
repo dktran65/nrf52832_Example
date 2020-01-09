@@ -5,7 +5,7 @@
 @set KW_SVRPORT=8080
 @set KW_VERSION=Kw19v2
 
-@set KW_TOOL_LOC=C:\Klocwork\kwbuildtools\bin\
+@set KW_TOOL_LOC=C:\Klocwork\kwbuildtools\bin
 :: Run Cleanup and Klocwork Analysis
 ::
 %KW_TOOL_LOC%\kwinject cmd /c build.bat
