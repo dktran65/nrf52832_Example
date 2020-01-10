@@ -8,9 +8,12 @@
 @set KW_TOOL_LOC=C:\Klocwork\kwbuildtools\bin
 :: Start Date/TIME
 @echo Start SCA at %DATE% and %TIME%
+:: Do a Native Clean and Build
+cmd /c NativeBuild.bat
+::
 :: Run Cleanup and Klocwork Analysis
 ::
-%KW_TOOL_LOC%\kwinject cmd /c build.bat
+%KW_TOOL_LOC%\kwinject cmd /c KwBuild.bat
 ::
 :: Run KwBuildProject
 kwbuildproject --url http://%KW_SVRNAME%:%KW_SVRPORT%/%KW_PROJECT% -f -o kwtables kwinject.out
