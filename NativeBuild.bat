@@ -9,5 +9,5 @@
 ::
 :: Run Native Bompiler to get the File Location
 @cd %PROJ%
-if exist %OUTDIR% (@rmdir /Q/S %OUTDIR%)
+if exist %OUTDIR% (rmdir /Q/S %OUTDIR%)
 %UTIL_EMB% -config "Debug" nrf52832_Example.emProject
