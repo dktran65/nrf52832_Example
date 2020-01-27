@@ -1,10 +1,10 @@
 @echo off
 :: Setup the Toolchain
-@set SEGGER_ARMTOOL_BASE=C:\SEGGER_EmbeddedStudio_for_ARM_4.30c\gcc\arm-none-eabi\bin
+@set SEGGER_ARMTOOL_BASE=C:\SEGGER_Embedded_Studio_for_ARM_4.40\gcc\arm-none-eabi\bin
 @set SESARM_CC1=%SEGGER_ARMTOOL_BASE%\cc1
 @set SESARM_AS=%SEGGER_ARMTOOL_BASE%\as
 @set SESARM_LD=%SEGGER_ARMTOOL_BASE%\ld
-@Set SEGGER_BIN_DIR=C:\SEGGER_EmbeddedStudio_for_ARM_4.30c\bin
+@Set SEGGER_BIN_DIR=C:\SEGGER_Embedded_Studio_for_ARM_4.40\bin
 @Set UTIL_RM=::%SEGGER_BIN_DIR%\rm
 @Set UTIL_MKLD=%SEGGER_BIN_DIR%\mkld
 @Set UTIL_EMB=%SEGGER_BIN_DIR%\emBuild
@@ -36,7 +36,7 @@ if exist %OUT_DIR% (@rmdir /Q/S %OUT_DIR%)
 @set CC_SFILE_FLAGS=-fmessage-length=0 -fno-diagnostics-show-caret -E -mcpu=cortex-m4 -mlittle-endian -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mthumb -nostdinc
 @set AS_FLAGS=--traditional-format -mcpu=cortex-m4 -mlittle-endian -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mthumb
 ::  Include Files
-@set CC_INC_SYSTEM=-isystemC:/SEGGER_EmbeddedStudio_for_ARM_4.30c/include
+@set CC_INC_SYSTEM=-isystemC:/SEGGER_Embedded_Studio_for_ARM_4.40/include
 @set CC_INC_CMSIS=-IC:/SandboxProjects/nrf52832_Example/CMSIS_4/CMSIS/Include
 @set CC_INC_DEVICE=-IC:/SandboxProjects/nrf52832_Example/nRF/CMSIS/Device/Include
 @set CC_CONFIG_OPTIONS=-D__SIZEOF_WCHAR_T=4 -D__ARM_ARCH_7EM__ -D__SES_ARM -D__ARM_ARCH_FPV4_SP_D16__ -D__HEAP_SIZE__=256 -D__SES_VERSION=43003 -D__GNU_LINKER -DDEBUG -DNRF52832_XXAA -D__nRF_FAMILY -DARM_MATH_CM4 -DFLASH_PLACEMENT=1

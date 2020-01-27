@@ -1,6 +1,6 @@
 @echo off
 :: Setup the Toolchain
-@Set UTIL_DIR=C:\SEGGER_EmbeddedStudio_for_ARM_4.30c\bin
+@Set UTIL_DIR=C:\SEGGER_Embedded_Studio_for_ARM_4.40\bin
 @Set UTIL_EMB=%UTIL_DIR%\emBuild
 ::
 :: Setup Project Location 
