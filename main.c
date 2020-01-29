@@ -59,6 +59,9 @@ Purpose : Generic application start
 */
 void main(void) {
   int i;
+  int badArray[4] = {1,2,3};
+  
+  badArray[3] = 4;  // Should be ABV
 
   for (i = 0; i < 100; i++) {
     printf("Hello World %d!\n", i);
@@ -67,5 +70,20 @@ void main(void) {
     i++;
   } while (1);
 }
+
+void array_boundery_violation()
+{
+	int aBV[3] = {1,2,3};
+	aBV[4]= 5;
+}
+
+
+void null_pointer_deference_general_must()
+{
+	int *iPtr = NULL;
+	*iPtr = 2;
+
+}
+
 
 /*************************** End of file ****************************/
