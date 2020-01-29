@@ -2,7 +2,7 @@
 
 ## Setup the Toolchain
 UTIL_DIR=/usr/share/segger_embedded_studio_for_arm_4.42/bin
-UTIL_EMB=$UTIL_DIR\emBuild
+UTIL_EMB=$UTIL_DIR/emBuild
 ##
 ## Setup Project Location 
 PROJ=$PWD
